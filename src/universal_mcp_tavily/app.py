@@ -1,5 +1,5 @@
-from universal_mcp.applications.application import APIApplication
-from universal_mcp.integrations import Integration
+from universal_mcp.applications import APIApplication
+from universal_mcp import Integration
 
 
 class TavilyApp(APIApplication):
