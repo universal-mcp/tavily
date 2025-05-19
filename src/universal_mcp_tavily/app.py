@@ -5,8 +5,8 @@ from universal_mcp.integrations import Integration
 class TavilyApp(APIApplication):
     def __init__(self, integration: Integration) -> None:
         name = "tavily"
-        self.base_url = "https://api.tavily.com"
         super().__init__(name=name, integration=integration)
+        self.base_url = "https://api.tavily.com"
 
     def search(self, query: str) -> str:
         """
